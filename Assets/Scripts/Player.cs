@@ -8,149 +8,148 @@ public class Player : MonoBehaviour
     private const float maxX = 3.6f;
     private const float minX = -3.6f;
 
-
-	private SpriteRenderer sp;
-	public Sprite shipLeft,shipRight,shipCustom;
+    private SpriteRenderer sp;
+    public Sprite shipLeft, shipRight, shipCustom;
 
     //private float speed = 3f;
     private bool isShooting;
     //private float cooldown = 0.5f;
     [SerializeField] private ObjectPool objectPool = null;
     public ShipStats shipStats;
-	private Vector2 offScreenPos = new Vector2(0, -20f);
-	private Vector2 startPos = new Vector2(0, -6.5f);
-	private float dirx;
+    private Vector2 offScreenPos = new Vector2(0, -20f);
+    private Vector2 startPos = new Vector2(0, -6.5f);
+    private float dirx;
 
-	private void Start()
-	{
-		shipStats.currentHealth = shipStats.maxHealth;
-		shipStats.currentLifes = shipStats.maxLifes;
-		transform.position = startPos;
-		UIManager.UpdateHealthBar(shipStats.currentHealth);
-		UIManager.UpdateLives(shipStats.currentLifes);
-		sp = GetComponent<SpriteRenderer>();
-		sp.sprite = shipCustom;
-	}
+    private void Start()
+    {
+        shipStats.currentHealth = shipStats.maxHealth;
+        shipStats.currentLifes = shipStats.maxLifes;
+        transform.position = startPos;
+        UIManager.UpdateHealthBar(shipStats.currentHealth);
+        UIManager.UpdateLives(shipStats.currentLifes);
+        sp = GetComponent<SpriteRenderer>();
+        sp.sprite = shipCustom;
+    }
 
-	void Update()
+    void Update()
     {
 #if UNITY_EDITOR
-		if (Input.GetKey(KeyCode.A) && transform.position.x > minX)
-		{
-            transform.Translate(Vector2.left * Time.deltaTime * shipStats.shipSpeed);
-		}
-		if (Input.GetKey(KeyCode.D) && transform.position.x < maxX)
-		{
-            transform.Translate(Vector2.right * Time.deltaTime * shipStats.shipSpeed);
-		}
-		if (!isShooting)
-		{
-			StartCoroutine(Shoot());
-		}
-#endif
-		dirx = Input.acceleration.x;
-		//Debug.Log(dirx);
-		if (dirx <= -0.1f && transform.position.x > minX)
-		{
-			transform.Translate(Vector2.left * Time.deltaTime * shipStats.shipSpeed);
-			sp.sprite = shipLeft;
-		}
-		if (dirx >= 0.1f && transform.position.x < maxX)
-		{
-			transform.Translate(Vector2.right * Time.deltaTime * shipStats.shipSpeed);
-			sp.sprite = shipRight;
-		}
-		if (dirx>=-0.1f && dirx <= 0.1f)
+        if (Input.GetKey(KeyCode.A) && transform.position.x > minX)
         {
-			sp.sprite = shipCustom;
+            transform.Translate(Vector2.left * Time.deltaTime * shipStats.shipSpeed);
+        }
+        if (Input.GetKey(KeyCode.D) && transform.position.x < maxX)
+        {
+            transform.Translate(Vector2.right * Time.deltaTime * shipStats.shipSpeed);
+        }
+        if (!isShooting)
+        {
+            StartCoroutine(Shoot());
+        }
+#endif
+        dirx = Input.acceleration.x;
+        //Debug.Log(dirx);
+        if (dirx <= -0.1f && transform.position.x > minX)
+        {
+            transform.Translate(Vector2.left * Time.deltaTime * shipStats.shipSpeed);
+            sp.sprite = shipLeft;
+        }
+        if (dirx >= 0.1f && transform.position.x < maxX)
+        {
+            transform.Translate(Vector2.right * Time.deltaTime * shipStats.shipSpeed);
+            sp.sprite = shipRight;
+        }
+        if (dirx >= -0.1f && dirx <= 0.1f)
+        {
+            sp.sprite = shipCustom;
         }
     }
 
-	public void ShootButton()
-	{
-		if (!isShooting)
-		{
-			StartCoroutine(Shoot());
-		}
-	}
+    public void ShootButton()
+    {
+        if (!isShooting)
+        {
+            StartCoroutine(Shoot());
+        }
+    }
 
-	public void AddHealth()
-	{
-		if (shipStats.currentHealth == shipStats.maxHealth)
-		{
-			UIManager.UpdateScore(250);
-		}
-		else
-		{
-			shipStats.currentHealth++;
-			UIManager.UpdateHealthBar(shipStats.currentHealth);
-		}
-	}
+    public void AddHealth()
+    {
+        if (shipStats.currentHealth == shipStats.maxHealth)
+        {
+            UIManager.UpdateScore(250);
+        }
+        else
+        {
+            shipStats.currentHealth++;
+            UIManager.UpdateHealthBar(shipStats.currentHealth);
+        }
+    }
 
-	public void AddLife()
-	{
-		if (shipStats.currentLifes == shipStats.maxLifes)
-		{
-			UIManager.UpdateScore(1000);
-		}
-		else
-		{
-			shipStats.currentLifes++;
-			UIManager.UpdateLives(shipStats.currentLifes);
-		}
-	}
-	
+    public void AddLife()
+    {
+        if (shipStats.currentLifes == shipStats.maxLifes)
+        {
+            UIManager.UpdateScore(1000);
+        }
+        else
+        {
+            shipStats.currentLifes++;
+            UIManager.UpdateLives(shipStats.currentLifes);
+        }
+    }
+
 
     private IEnumerator Shoot()
-	{
+    {
         isShooting = true;
         //Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         GameObject obj = objectPool.GetPooledObject();
         obj.transform.position = gameObject.transform.position;
         yield return new WaitForSeconds(shipStats.fireRate);
         isShooting = false;
-	}
+    }
 
-	private void OnCollisionEnter2D(Collision2D collision)
-	{
-		if (collision.gameObject.CompareTag("EnemyBullet"))
-		{
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("EnemyBullet"))
+        {
             Debug.Log("Player Hit!..");
             collision.gameObject.SetActive(false);
             TakeDamage();
-		}
-	}
+        }
+    }
 
-	private IEnumerator Respawn()
-	{
-		transform.position = offScreenPos;
+    private IEnumerator Respawn()
+    {
+        transform.position = offScreenPos;
 
-		yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(2);
 
-		shipStats.currentHealth = shipStats.maxHealth;
+        shipStats.currentHealth = shipStats.maxHealth;
 
-		transform.position = startPos;
-		UIManager.UpdateHealthBar(shipStats.currentHealth);
-	}
+        transform.position = startPos;
+        UIManager.UpdateHealthBar(shipStats.currentHealth);
+    }
 
     public void TakeDamage()
-	{
-		shipStats.currentHealth--;
-		UIManager.UpdateHealthBar(shipStats.currentHealth);
-		if (shipStats.currentHealth <= 0)
-		{
-			shipStats.currentLifes--;
-			UIManager.UpdateLives(shipStats.currentLifes);
-			if (shipStats.currentLifes <= 0)
-			{
-				Debug.Log("Game Over");
-			}
-			else
-			{
-				//Debug.Log("Respawn");
-				StartCoroutine(Respawn());
-			}
-		}
-		
-	}
+    {
+        shipStats.currentHealth--;
+        UIManager.UpdateHealthBar(shipStats.currentHealth);
+        if (shipStats.currentHealth <= 0)
+        {
+            shipStats.currentLifes--;
+            UIManager.UpdateLives(shipStats.currentLifes);
+            if (shipStats.currentLifes <= 0)
+            {
+                Debug.Log("Game Over");
+            }
+            else
+            {
+                //Debug.Log("Respawn");
+                StartCoroutine(Respawn());
+            }
+        }
+
+    }
 }
