@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1947347893, guid: f77583f2b4b73594398c53b382e64fd1, type: 3}
+  m_Sprite: {fileID: 1037321572, guid: 42d0bc3372c6c2a4692c34176462c553, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,7 +103,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.03157772, y: -0.061941028}
   m_SpriteTilingProperty:
-    border: {x: 0.0625, y: 0, z: 0, w: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
@@ -129,7 +129,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.031577736, y: -0.21618617}
   m_SpriteTilingProperty:
-    border: {x: 0.0625, y: 0, z: 0, w: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
@@ -153,7 +153,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 6162680620457103309, guid: 46644c4098500e348a1a319847dedbc1, type: 3}
+  shipLeft: {fileID: -1285500918, guid: 42d0bc3372c6c2a4692c34176462c553, type: 3}
+  shipRight: {fileID: 417830536, guid: 42d0bc3372c6c2a4692c34176462c553, type: 3}
+  shipCustom: {fileID: 1037321572, guid: 42d0bc3372c6c2a4692c34176462c553, type: 3}
   objectPool: {fileID: 2898593363058398731}
+  shipStats:
+    maxHealth: 0
+    currentHealth: 0
+    maxLifes: 3
+    currentLifes: 3
+    shipSpeed: 0
+    fireRate: 0
 --- !u!114 &2898593363058398731
 MonoBehaviour:
   m_ObjectHideFlags: 0

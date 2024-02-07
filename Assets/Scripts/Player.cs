@@ -8,6 +8,10 @@ public class Player : MonoBehaviour
     private const float maxX = 3.6f;
     private const float minX = -3.6f;
 
+
+	private SpriteRenderer sp;
+	public Sprite shipLeft,shipRight,shipCustom;
+
     //private float speed = 3f;
     private bool isShooting;
     //private float cooldown = 0.5f;
@@ -24,7 +28,8 @@ public class Player : MonoBehaviour
 		transform.position = startPos;
 		UIManager.UpdateHealthBar(shipStats.currentHealth);
 		UIManager.UpdateLives(shipStats.currentLifes);
-		
+		sp = GetComponent<SpriteRenderer>();
+		sp.sprite = shipCustom;
 	}
 
 	void Update()
@@ -48,11 +53,17 @@ public class Player : MonoBehaviour
 		if (dirx <= -0.1f && transform.position.x > minX)
 		{
 			transform.Translate(Vector2.left * Time.deltaTime * shipStats.shipSpeed);
+			sp.sprite = shipLeft;
 		}
 		if (dirx >= 0.1f && transform.position.x < maxX)
 		{
 			transform.Translate(Vector2.right * Time.deltaTime * shipStats.shipSpeed);
+			sp.sprite = shipRight;
 		}
+		if (dirx>=-0.1f && dirx <= 0.1f)
+        {
+			sp.sprite = shipCustom;
+        }
     }
 
 	public void ShootButton()
