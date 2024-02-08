@@ -29,6 +29,7 @@ public class Player : MonoBehaviour
         UIManager.UpdateLives(shipStats.currentLifes);
         sp = GetComponent<SpriteRenderer>();
         sp.sprite = shipCustom;
+        shipStats.fireRate = 0.8f;
     }
 
     void Update()
@@ -36,10 +37,12 @@ public class Player : MonoBehaviour
 #if UNITY_EDITOR
         if (Input.GetKey(KeyCode.A) && transform.position.x > minX)
         {
+            sp.sprite = shipLeft;
             transform.Translate(Vector2.left * Time.deltaTime * shipStats.shipSpeed);
         }
-        if (Input.GetKey(KeyCode.D) && transform.position.x < maxX)
+        else if (Input.GetKey(KeyCode.D) && transform.position.x < maxX)
         {
+            sp.sprite = shipRight;
             transform.Translate(Vector2.right * Time.deltaTime * shipStats.shipSpeed);
         }
         if (!isShooting)
@@ -59,7 +62,7 @@ public class Player : MonoBehaviour
             transform.Translate(Vector2.right * Time.deltaTime * shipStats.shipSpeed);
             sp.sprite = shipRight;
         }
-        if (dirx >= -0.1f && dirx <= 0.1f)
+        if (dirx >= -0.1f && dirx <= 0.1f && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
         {
             sp.sprite = shipCustom;
         }

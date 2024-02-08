@@ -20,6 +20,7 @@ public class UIManager : MonoBehaviour
 	public Sprite[] healthBars;
 	private Color32 active = new Color(1, 1, 1, 1);
 	private Color32 inactive = new Color(1, 1, 1, 0.25f);
+	
 
 	private void Awake()
 	{
@@ -67,4 +68,8 @@ public class UIManager : MonoBehaviour
 		instance.coinsText.text = Inventory.currentCoins.ToString();
 	}
 
+	public static int GetWave()
+    {
+		return instance.wave;
+    }
 }

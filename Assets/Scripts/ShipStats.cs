@@ -14,4 +14,5 @@ public class ShipStats
 
     public float shipSpeed;
     public float fireRate;
+
 }
