@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UITweener : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class UITweener : MonoBehaviour
 
         for (int i = 0; i < aliens.Length; i++)
         {
-            LeanTween.moveY(aliens[i], 1500f - 150 * i, 2f).setDelay(1f + i / 2f).setEase(easeType);
+            LeanTween.moveY(aliens[i], 1300f - 150 * i, 2f).setDelay(1f + i / 2f).setEase(easeType);
             StartCoroutine(ShowPoints(3f + i / 2f, i));
         }
 
@@ -26,5 +27,10 @@ public class UITweener : MonoBehaviour
         GameObject go = aliens[order].transform.GetChild(0).gameObject;
         go.SetActive(true);
         LeanTween.scale(go, new Vector3(1f, 1f, 1f), 1f).setEase(easeType2);
+    }
+
+    public void PlayButton()
+    {
+        SceneManager.LoadScene("GameScene");
     }
 }
