@@ -20,6 +20,7 @@ public class UIManager : MonoBehaviour
 	public Sprite[] healthBars;
 	private Color32 active = new Color(1, 1, 1, 1);
 	private Color32 inactive = new Color(1, 1, 1, 0.25f);
+	public GameObject secimPanel;
 	
 
 	private void Awake()
@@ -71,5 +72,9 @@ public class UIManager : MonoBehaviour
 	public static int GetWave()
     {
 		return instance.wave;
+    }
+	public static GameObject GetSecimPanel()
+    {
+		return instance.secimPanel;
     }
 }

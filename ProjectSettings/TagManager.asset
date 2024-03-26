@@ -8,6 +8,7 @@ TagManager:
   - EnemyBullet
   - FriendlyBullet
   - BuyPanel
+  - SecimPanel
   layers:
   - Default
   - TransparentFX

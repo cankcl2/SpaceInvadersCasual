@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
         sp = GetComponent<SpriteRenderer>();
         sp.sprite = shipCustom;
         shipStats.fireRate = 0.8f;
+        shipStats.shipSpeed = 3;
     }
 
     void Update()

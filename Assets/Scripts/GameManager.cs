@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 	public GameObject[] allAlienSets;
-	private GameObject currentSet;
+	public GameObject currentSet;
 	private Vector2 spawnPos = new Vector2(0, 10);
 
 	public static GameManager instance;

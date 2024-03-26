@@ -150,6 +150,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &39260370004892441
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,6 +302,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &39260370357451843
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,6 +454,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &39260371057993136
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,6 +606,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &39260371137318467
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,6 +758,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &7273375114866582809
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,6 +910,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &7273375115505453621
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,6 +1062,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &7273375116355750065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,6 +1214,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &7623891248586442296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,6 +1366,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &7623891248744887823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,6 +1518,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &7623891248753431117
 GameObject:
   m_ObjectHideFlags: 0
@@ -1650,6 +1670,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &7623891249019158578
 GameObject:
   m_ObjectHideFlags: 0
@@ -1800,6 +1822,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &7623891249161625652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1950,6 +1974,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &7623891250029363250
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,6 +2126,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &7623891250490826911
 GameObject:
   m_ObjectHideFlags: 0
@@ -2250,6 +2278,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &8289336374202031989
 GameObject:
   m_ObjectHideFlags: 0
@@ -2400,6 +2430,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &8426953691694007609
 GameObject:
   m_ObjectHideFlags: 0
@@ -2550,6 +2582,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &8426953691830120011
 GameObject:
   m_ObjectHideFlags: 0
@@ -2700,6 +2734,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &8426953692645117606
 GameObject:
   m_ObjectHideFlags: 0
@@ -2850,6 +2886,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &8426953692741668235
 GameObject:
   m_ObjectHideFlags: 0
@@ -3000,6 +3038,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &8426953693330148278
 GameObject:
   m_ObjectHideFlags: 0
@@ -3150,6 +3190,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &8426953693345553746
 GameObject:
   m_ObjectHideFlags: 0
@@ -3300,6 +3342,8 @@ MonoBehaviour:
   coinPrefab: {fileID: 8276385190231508713, guid: d2e672409d4c2034aa290f3cd2d1db38, type: 3}
   lifePrefab: {fileID: 6741444440821255734, guid: a56c205a351f6e3439014fc03fdbfbcc, type: 3}
   healthPrefab: {fileID: 4887574791629876784, guid: 41b163172d1fe3e4a9d13b6a3bb38cd0, type: 3}
+  shipSpeedPrefab: {fileID: 8116173618140788368, guid: 6f32c5887c509de4f9b6732206e4f1f8, type: 3}
+  shipFireRatePrefab: {fileID: 5764308408817616084, guid: 666ff7f6c54afff4ca26b4ec534c9104, type: 3}
 --- !u!1 &9196316317664474097
 GameObject:
   m_ObjectHideFlags: 0
